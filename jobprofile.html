@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<div style="display: flex; gap: 20px;">
+<div style="padding: 10px;" style="gap: 10px;">
+<div class="bg-success bg-gradient w-50 p-5 text-dark" style="padding: 10px; width: fit-content; background-color: lightgreen; position: absolute; top: 0px; right: 0px;">
+    <div style="text-align: center; font-family: georgia; text-decoration: underline;"><h1 class ="title" draggable="true">
+        <p id="title">John Doe's Profile</p>
+    </h1></div>
+</div>
+
+<div class="col-sm-4" class="card" style="width: 40px; height: 40px; border: 5px solid darkcyan; border-right: 5px solid darkcyan; background-color: cyan; position: absolute; top: 0px; left: 0px;">
+        <a href="jobhp.html"><-</a>
+</div>
+
+<div class="col-sm-4" class="card" id="viewing-card" style="word-wrap: break-word; width: 700px; border: 5px solid darkcyan; background-color: cyan; position: absolute; top: 50px; visibility: visible;">
+    <h2>About Me</h2>
+        <p id ="about">Placeholder Text</p>
+    <h2>Skills</h2>
+        <p id = "skills">Placeholder Text</p>
+    <a href="jobprofile.html" style="font-size: x-large; text-decoration: underline;">Resume</a>
+    <h2>Contact Info</h2>
+        <p id ="contact">Placeholder Text</p>
+    <a><button type="button" onclick="EditProfile()" class="prof-edit">Edit Profile</button></a>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4" class="card" id="editing-card" style="word-wrap: break-word; width: 1000px; border: 5px solid darkcyan; background-color: cyan; position: absolute; top: 50px; visibility: hidden;">
+    <h2>About Me</h2>
+        <form action="/submit_page.php">
+        <input type="text" id="about-edit"><br>
+        <script>
+        </script>
+    <h2>Skills</h2>
+        <form action="/submit_page.php">
+        <input type="text" id="skills-edit"><br>
+        <script>
+        </script>
+    <h2>Resume</h2>
+    <form action="/submit_page.php">
+        <input type="text" id="resume-edit"><br>
+        <script>
+        </script>
+    <h2>Contact Info</h2>
+        <form action="/submit_page.php">
+        <input type="text" id="contact-edit"><br>
+        <script>
+        </script>
+    <a><button type="button" onclick="SaveProfile()" class="btn">Save Profile</button></a>
+    <a><button type="button" onclick="EditProfile()" class="btn">Cancel</button></a>
+</div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="job.js"></script>
+</body>
+</html>

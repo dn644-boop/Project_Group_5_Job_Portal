@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<div style="display: flex; gap: 20px;">
+<div style="padding: 10px;" style="gap: 10px;">
+<div class="bg-success bg-gradient w-50 p-5 text-dark" style="padding: 30px; width: fit-content; background-color: lightgreen">
+    <div style="text-align: center; font-family: georgia; text-decoration: underline;"><h1 class ="title" draggable="true">
+        Welcome to Work 4 Hire!
+    </h1></div>
+</div>
+<div class="top-bar" class="card" style="word-wrap: break-word; text-align: center; font-size: larger; position: absolute; top: 0px; right: 0px;">
+    <div class="col-sm-4" class="card" style="width: 150px; height: 150px; border: 5px solid darkcyan; border-right: 2.5px solid darkcyan; background-color: cyan;">
+        <a href="jobmail.html">Mail</a>
+    </div>
+    <div class="col-sm-4" class="card" style="width: 150px; height: 150px; border: 5px solid darkcyan; border-left: 2.5px solid darkcyan; background-color: cyan;">
+        <a href="jobprofile.html">Your Profile</a>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4" class="card" style="word-wrap: break-word; width: 500px; border: 5px solid darkcyan; background-color: cyan;">
+    <form action="/submit_page.php">
+        <label for="name">Job Type:</label>
+        <input type="text" id="job-type"><br>
+        <label for="title">Pay:</label>
+        <input type="text" id="pay"><br>
+        <label for="title">Location:</label>
+        <input type="text" id="location"><br>
+        <label for="title">Education:</label>
+        <input type="text" id="education"><br>
+        <label for="name">Experience:</label>
+        <input type="text" id="experience"><br>
+        <script>
+        </script>
+        <a><button type="button" onclick="SignUp()" class="btn">Search Now</button></a>
+    </form>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-4" class="card" style="width: 150px; height: 30px; border: 5px solid darkcyan; border-left: 5px solid darkcyan; background-color: cyan;">
+        <a href="joblistingcreate.html">Create Listing</a>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="vlog3.js"></script>
+</body>
+</html>

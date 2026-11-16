@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<div style="display: flex;">
+<div class="bg-success bg-gradient w-50 p-5 text-dark" style="padding: 10px; width: fit-content; background-color: lightgreen; position: absolute; top: 0px; right: 0px;">
+    <div style="text-align: center; font-family: georgia; text-decoration: underline;"><h1 class ="title" draggable="true">
+        Mail
+    </h1></div>
+</div>
+
+<div class="col-sm-4" class="card" style="width: 40px; height: 40px; border: 5px solid darkcyan; border-right: 5px solid darkcyan; background-color: cyan; position: absolute; top: 0px; left: 0px;">
+        <a href="jobhp.html"><-</a>
+</div>
+
+<div class="col-sm-4" class="card" id="read-email" style="word-wrap: break-word; position: absolute; top: 50px; left: 150px; visibility: visible;">
+    <div class="col-sm-4" class="card" style="width: 800px; height: 50px; border: 5px solid darkcyan; border-bottom: 2.5px solid darkcyan; background-color: cyan;">
+        <h3 id="email-subject">Placeholder Subject</h3>
+    </div>
+    <div class="col-sm-4" class="card" style="width: 800px; height: 50px; border: 5px solid darkcyan; border-bottom: 2.5px solid darkcyan; background-color: cyan;">
+        <h3 id="email-sender">Placeholder Sender</h3>
+    </div>
+    <div class="col-sm-4" class="card" style="width: 800px; height: 500px; border: 5px solid darkcyan; border-top: 2.5px solid darkcyan; background-color: cyan;">
+        <p id="email-body">Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text </p>
+    </div>
+    <div class="col-sm-4" class="card" style="width: 800px; height: 50px; border: 5px solid darkcyan; border-bottom: 2.5px solid darkcyan; background-color: cyan;">
+        <a><button type="button" onclick="Compose()" class="btn">Compose Email</button></a>
+        <a><button type="button" onclick="Mark()" class="btn">Mark as Read</button></a>
+    </div>
+</div>
+
+<div class="col-sm-4" class="card" id="compose-email" style="word-wrap: break-word; position: absolute; top: 50px; left: 150px; visibility: hidden;">
+    <div class="col-sm-4" class="card" style="width: 800px; height: 50px; border: 5px solid darkcyan; border-bottom: 2.5px solid darkcyan; background-color: cyan;">
+        <label for="name">Subject:</label>
+        <form action="/submit_page.php">
+        <input type="text" id="subject-edit"><br>
+        <script>
+        </script>
+    </div>
+    <div class="col-sm-4" class="card" style="width: 800px; height: 50px; border: 5px solid darkcyan; border-bottom: 2.5px solid darkcyan; background-color: cyan;">
+        <label for="name">Receiver:</label>
+        <form action="/submit_page.php">
+        <input type="text" id="receiver-edit"><br>
+        <script>
+        </script>
+    </div>
+    <div class="col-sm-4" class="card" style="width: 800px; height: 500px; border: 5px solid darkcyan; border-top: 2.5px solid darkcyan; background-color: cyan;">
+        <label for="name">Body:</label>
+        <form action="/submit_page.php">
+        <input type="text" id="body-edit"><br>
+        <script>
+        </script>
+    </div>
+    <div class="col-sm-4" class="card" style="width: 800px; height: 50px; border: 5px solid darkcyan; border-bottom: 2.5px solid darkcyan; background-color: cyan;">
+        <a><button type="button" onclick="Send()" class="btn">Send Email</button></a>
+        <a><button type="button" onclick="Compose()" class="btn">Cancel</button></a>
+    </div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="job.js"></script>
+</body>
+</html>
